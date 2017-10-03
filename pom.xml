@@ -17,8 +17,8 @@
       </plugin>
     </plugins>
   </build>
-  <properties>
-    <project.build.sourceEncoding>x-mswin-936</project.build.sourceEncoding>
-  </properties>
   <url>https://github.com/neo-project/neo-devpack-java</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 </project>
