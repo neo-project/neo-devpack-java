@@ -123,8 +123,8 @@ public enum _OpCode
     UNPACK(0xC2),
     PICKITEM(0xC3),
     SETITEM(0xC4),
-    NEWARRAY(0xC5), //用作引用類型
-    NEWSTRUCT(0xC6); //用作值類型
+    NEWARRAY(0xC5), // Used as a reference type
+    NEWSTRUCT(0xC6); // i cannot translate it to english
 
     
 	private int value;
