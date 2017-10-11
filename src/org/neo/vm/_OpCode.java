@@ -124,7 +124,7 @@ public enum _OpCode
     PICKITEM(0xC3),
     SETITEM(0xC4),
     NEWARRAY(0xC5), // Used as a reference type
-    NEWSTRUCT(0xC6); // i cannot translate it to english
+    NEWSTRUCT(0xC6); // Used as a value type
 
     
 	private int value;
