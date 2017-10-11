@@ -1,4 +1,4 @@
-﻿package org.neo.smartcontract.framework.services.neo;
+package org.neo.smartcontract.framework.services.neo;
 
 import java.math.BigInteger;
 import org.neo.smartcontract.framework.Syscall;
