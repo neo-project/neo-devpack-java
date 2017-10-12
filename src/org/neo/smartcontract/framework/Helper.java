@@ -20,8 +20,8 @@ public class Helper {
 	public native static byte[] concat(byte[] first, byte[] second);
 
 	@OpCode(_OpCode.SUBSTR)
-	public native byte[] range(byte[] source, int index, int count);
+	public native static byte[] range(byte[] source, int index, int count);
 
 	@OpCode(_OpCode.LEFT)
-	public native byte[] take(byte[] source, int count);
+	public native static byte[] take(byte[] source, int count);
 }
