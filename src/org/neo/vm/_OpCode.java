@@ -29,7 +29,6 @@ public enum _OpCode
     PUSH15(0x5F), // The number 15 is pushed onto the stack.
     PUSH16(0x60), // The number 16 is pushed onto the stack.
 
-
     // Flow control
     NOP(0x61), // Does nothing.
     JMP(0x62),
@@ -40,7 +39,6 @@ public enum _OpCode
     APPCALL(0x67),
     SYSCALL(0x68),
     TAILCALL(0x69),
-
 
     // Stack
     DUPFROMALTSTACK(0x6A),
@@ -60,14 +58,12 @@ public enum _OpCode
     SWAP(0x7C), // The top two items on the stack are swapped.
     TUCK(0x7D), // The item at the top of the stack is copied and inserted before the second-to-top item.
 
-
     // Splice
     CAT(0x7E), // Concatenates two strings.
     SUBSTR(0x7F), // Returns a section of a string.
     LEFT(0x80), // Keeps only characters left of the specified point in a string.
     RIGHT(0x81), // Keeps only characters right of the specified point in a string.
     SIZE(0x82), // Returns the length of the input string.
-
 
     // Bitwise logic
     INVERT(0x83), // Flips all of the bits in the input.
@@ -116,7 +112,6 @@ public enum _OpCode
     CHECKSIG(0xAC),
     CHECKMULTISIG(0xAE),
 
-
     // Array
     ARRAYSIZE(0xC0),
     PACK(0xC1),
@@ -124,23 +119,26 @@ public enum _OpCode
     PICKITEM(0xC3),
     SETITEM(0xC4),
     NEWARRAY(0xC5), // Used as a reference type
-    NEWSTRUCT(0xC6); // Used as a value type
+    NEWSTRUCT(0xC6), // Used as a value type
 
-    
-	private int value;
+    // Exceptions
+    THROW(0xF0),
+    THROWIFNOT(0xF1);
 
-	private _OpCode(int value)
-	{
-		this.value = value;
-	}
-	
-	private _OpCode(_OpCode op)
-	{
-		this.value = op.value;
-	}
+    private int value;
 
-	public int value()
-	{
-		return this.value;
-	}
+    private _OpCode(int value)
+    {
+        this.value = value;
+    }
+
+    private _OpCode(_OpCode op)
+    {
+        this.value = op.value;
+    }
+
+    public int value()
+    {
+        return this.value;
+    }
 }
