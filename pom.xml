@@ -4,13 +4,58 @@
     <artifactId>neo-devpack-java</artifactId>
     <version>2.3.0</version>
     <name>NEO DevPack For Java</name>
+    <url>https://github.com/neo-project/neo-devpack-java</url>
+    <description>Java jar dependency for developing smart contracts on NEO platform.</description>
 
+    <scm>
+        <connection>scm:git:git://github.com/neo-project/neo-devpack-java.git</connection>
+        <developerConnection>scm:git:ssh://github.com/neo-project/neo-devpack-java.git</developerConnection>
+        <url>https://github.com/neo-project/neo-devpack-java/tree/master</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
     </properties>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/neo-project/neo-devpack-java/blob/master/LICENSE</url>
+            <distribution>may be downloaded from the Maven repository</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Erik Zhang</name>
+            <email>erik@neo.org</email>
+            <organization>Neo Project</organization>
+            <organizationUrl>https://neo.org</organizationUrl>
+        </developer>
+
+        <developer>
+            <name>Peter Szatmary</name>
+            <email>peter.szatmary@gmail.com</email>
+            <organization>Peter Szatmary</organization>
+            <organizationUrl>https://github.com/peterszatmary</organizationUrl>
+        </developer>
+
+        <developer>
+            <name>Luke Plaster</name>
+            <email>me@lukep.org</email>
+            <organization>Luke Plaster</organization>
+            <organizationUrl>https://lukep.org</organizationUrl>
+        </developer>
+
+        <developer>
+            <name>lights li</name>
+            <email>lightsever@hotmail.com</email>
+            <organization>lights li</organization>
+            <organizationUrl>http://www.cltri.com</organizationUrl>
+        </developer>
+    </developers>
 
     <build>
         <sourceDirectory>src</sourceDirectory>
@@ -26,5 +71,4 @@
             </plugin>
         </plugins>
     </build>
-    <url>https://github.com/neo-project/neo-devpack-java</url>
 </project>
