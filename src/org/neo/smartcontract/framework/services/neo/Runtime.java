@@ -14,4 +14,7 @@ public final class Runtime {
 
 	@Syscall("Neo.Runtime.Log")
 	public native static void log(String message);
+
+	@Syscall("Neo.Runtime.GetTime")
+	public native static long time();
 }
