@@ -4,6 +4,11 @@ import java.math.BigInteger;
 import org.neo.vm._OpCode;
 
 public class Helper {
+
+	private Helper() {
+		throw new IllegalStateException("Utility class");
+	}
+
 	@Nonemit
 	public native static BigInteger asBigInteger(byte[] source);
 
